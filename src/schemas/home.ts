@@ -39,6 +39,20 @@ export default defineField({
 				{ name: "button", type: "string", title: "Button" },
 			],
 		}),
+		defineField({
+			name: "picks_categories",
+			type: "array",
+			title: "Categories",
+			group: "editorial",
+			of: [{ type: "reference", to: [{ type: "category" }] }],
+		}),
+		defineField({
+			name: "featured_products",
+			type: "array",
+			title: "Featured Products",
+			group: "editorial",
+			of: [{ type: "reference", to: [{ type: "product" }] }],
+		}),
 	],
 	preview: {
 		prepare() {
