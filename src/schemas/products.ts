@@ -44,6 +44,12 @@ export default defineField({
 			validation: (Rule) => Rule.positive().required(),
 		}),
 		defineField({
+			name: "last_price",
+			type: "number",
+			title: "Last Price",
+			validation: (Rule) => Rule.positive(),
+		}),
+		defineField({
 			name: "images",
 			type: "array",
 			title: "Images",
