@@ -17,7 +17,24 @@ export default defineField({
 			of: [
 				{
 					type: "object",
-					fields: [{ name: "src", type: "string", title: "Image" }],
+					name: "Hero Image",
+					fields: [
+						{ name: "src", type: "image", title: "Image" },
+						{ name: "title", type: "string", title: "Title" },
+						{
+							type: "object",
+							name: "button",
+							fields: [
+								{ name: "name", type: "string" },
+								{
+									name: "url",
+									type: "string",
+									description:
+										"Dirección donde irá al hacer click, ejemplo /compra-ya/esto",
+								},
+							],
+						},
+					],
 				},
 			],
 		}),
