@@ -1,10 +1,10 @@
 import { defineField } from "sanity";
 import { DatabaseIcon } from "@sanity/icons";
 
-const TITLE = "Category";
+const TITLE = "Collection";
 
 export default defineField({
-	name: "category",
+	name: "Collection",
 	title: TITLE,
 	type: "document",
 	icon: DatabaseIcon,
@@ -19,7 +19,7 @@ export default defineField({
 			name: "description",
 			type: "text",
 			title: "Description",
-			description: "A brief description of the category.",
+			description: "A brief description of the Collection.",
 		}),
 		defineField({
 			name: "image",

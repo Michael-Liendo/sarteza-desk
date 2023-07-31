@@ -1,5 +1,5 @@
 import home from "./home";
-import categories from "./categories";
+import collection from "./collection";
 import products from "./products";
 
-export const schemaTypes = [home, categories, products];
+export const schemaTypes = [home, collection, products];

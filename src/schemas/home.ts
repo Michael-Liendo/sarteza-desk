@@ -40,11 +40,11 @@ export default defineField({
 			],
 		}),
 		defineField({
-			name: "picks_categories",
+			name: "picks_collections",
 			type: "array",
-			title: "Categories",
+			title: "Collections",
 			group: "editorial",
-			of: [{ type: "reference", to: [{ type: "category" }] }],
+			of: [{ type: "reference", to: [{ type: "collection" }] }],
 		}),
 		defineField({
 			name: "featured_products",

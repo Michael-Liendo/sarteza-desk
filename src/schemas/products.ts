@@ -26,10 +26,10 @@ export default defineField({
 			},
 		}),
 		defineField({
-			name: "category",
+			name: "collection",
 			type: "reference",
-			title: "Category",
-			to: [{ type: "category" }],
+			title: "collection",
+			to: [{ type: "collection" }],
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
