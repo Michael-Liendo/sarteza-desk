@@ -50,10 +50,22 @@ export default defineField({
 			title: "Call to Action",
 			group: "editorial",
 			fields: [
-				{ name: "src", type: "url", title: "Image" },
+				{ name: "src", type: "image", title: "Image" },
 				{ name: "title", type: "string", title: "Title" },
 				{ name: "small", type: "string", title: "Small" },
-				{ name: "button", type: "string", title: "Button" },
+				{
+					type: "object",
+					name: "button",
+					fields: [
+						{ name: "name", type: "string" },
+						{
+							name: "url",
+							type: "string",
+							description:
+								"Dirección donde irá al hacer click, ejemplo /compra-ya/esto",
+						},
+					],
+				},
 			],
 		}),
 		defineField({
