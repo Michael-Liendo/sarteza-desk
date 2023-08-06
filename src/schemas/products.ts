@@ -16,6 +16,12 @@ export default defineField({
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
+			name: "contact",
+			type: "string",
+			title: "Contacto del vendedor",
+			validation: (Rule) => Rule.required(),
+		}),
+		defineField({
 			name: "slug",
 			type: "slug",
 			title: "Slug",
